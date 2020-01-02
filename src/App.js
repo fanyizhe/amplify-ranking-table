@@ -8,9 +8,11 @@ import { listRanks as ListRanks } from './graphql/queries'
 import { onCreateRank, onUpdateRank, onDeleteRank } from './graphql/subscriptions'
 
 
+import awsmobile from './aws-exports'
 import RankTable from './RankTable';
 import Header from './Header';
 
+API.configure(awsmobile)
 
 class App extends React.Component {
   // define some state to hold the data returned from the API
