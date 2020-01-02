@@ -13,3 +13,6 @@ projects:
         region: ap-northeast-1
         apiId: ly7t4fsrpfgpjkr7k2yxq54gpe
         maxDepth: 2
+extensions:
+  amplify:
+    version: 3
