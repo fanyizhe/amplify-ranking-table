@@ -1,7 +1,7 @@
 import React from 'react';
 
 // imports from Amplify library
-import { API, graphqlOperation } from 'aws-amplify'
+import Amplify, { API, graphqlOperation } from 'aws-amplify'
 
 // import query definition
 import { listRanks as ListRanks } from './graphql/queries'
@@ -11,7 +11,9 @@ import { onCreateRank, onUpdateRank, onDeleteRank } from './graphql/subscription
 
 import RankTable from './RankTable';
 import Header from './Header';
+import awsmobile from './aws-exports'
 
+Amplify.configure(awsmobile)
 
 class App extends React.Component {
   // define some state to hold the data returned from the API
