@@ -1,0 +1,15 @@
+projects:
+  datagen-dev:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        region: ap-northeast-1
+        apiId: ly7t4fsrpfgpjkr7k2yxq54gpe
+        maxDepth: 2
